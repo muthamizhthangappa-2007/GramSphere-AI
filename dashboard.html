@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | GramSphere AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="fas fa-globe"></i> GramSphere AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+    <h1>🌐 Village Dashboard</h1>
+    <p>Real-time village analytics and monitoring.</p>
+</section>
+
+<!-- Statistics Cards -->
+<section class="cards">
+
+    <div class="card">
+        <i class="fas fa-user-group"></i>
+        <h2>125</h2>
+        <p>Farmers Registered</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-heart-pulse"></i>
+        <h2>86</h2>
+        <p>Health Records</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-droplet"></i>
+        <h2>78%</h2>
+        <p>Water Availability</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-seedling"></i>
+        <h2>210</h2>
+        <p>Acres Monitored</p>
+    </div>
+
+</section>
+
+<!-- Charts -->
+<section class="cards">
+
+    <div class="card" style="width:500px;">
+        <h3>Crop Production</h3>
+        <canvas id="cropChart"></canvas>
+    </div>
+
+    <div class="card" style="width:500px;">
+        <h3>Healthcare Visits</h3>
+        <canvas id="healthChart"></canvas>
+    </div>
+
+</section>
+
+<!-- Village Status -->
+<section class="cards">
+
+    <div class="card">
+        <h3>📶 Internet Status</h3>
+        <p>Active</p>
+    </div>
+
+    <div class="card">
+        <h3>⚡ Electricity</h3>
+        <p>92% Availability</p>
+    </div>
+
+    <div class="card">
+        <h3>💧 Water Storage</h3>
+        <p>78% Full</p>
+    </div>
+
+</section>
+
+<!-- Recent Activities -->
+<section class="cards">
+
+    <div class="card" style="width:700px;">
+        <h3>Recent Activities</h3>
+
+        <p>✅ 10 Farmers received crop recommendations.</p>
+        <p>✅ 5 Patients booked telemedicine appointments.</p>
+        <p>✅ Water storage updated.</p>
+        <p>✅ New government scheme notification added.</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 GramSphere AI | Village Dashboard
+    </p>
+</footer>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine | GramSphere AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="fas fa-globe"></i> GramSphere AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+    <h1>🏥 Telemedicine & Healthcare</h1>
+    <p>
+        AI-assisted healthcare services for rural communities.
+    </p>
+</section>
+
+<!-- Health Form -->
+<section class="form-section">
+
+    <div class="form-card">
+
+        <h2>Patient Registration</h2>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Patient Name">
+
+        <input
+            type="number"
+            id="age"
+            placeholder="Age">
+
+        <select id="symptom">
+            <option value="">Select Symptom</option>
+            <option>Fever</option>
+            <option>Cough</option>
+            <option>Headache</option>
+            <option>Body Pain</option>
+            <option>Breathing Difficulty</option>
+        </select>
+
+        <button onclick="checkHealth()">
+            Analyze Symptoms
+        </button>
+
+        <div
+            id="healthResult"
+            class="result-box">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Healthcare Cards -->
+<section class="cards">
+
+    <div class="card">
+        <i class="fas fa-user-doctor"></i>
+        <h3>Online Doctors</h3>
+        <p>12 Specialists Available</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-heart-pulse"></i>
+        <h3>Health Records</h3>
+        <p>86 Patient Records</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-truck-medical"></i>
+        <h3>Emergency Service</h3>
+        <p>24 × 7 Support</p>
+    </div>
+
+</section>
+
+<!-- Emergency Card -->
+<section class="cards">
+
+    <div class="card">
+        <h3>🚑 Emergency Contact</h3>
+        <p>Village Health Center</p>
+        <p>+91 9876543210</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 GramSphere AI | Telemedicine Platform
+    </p>
+</footer>
+
+<script src="js/healthcare.js"></script>
+
+</body>
+</html>

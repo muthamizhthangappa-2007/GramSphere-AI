@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Agriculture | GramSphere AI</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="logo">
+        <i class="fas fa-globe"></i> GramSphere AI
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="agriculture.html">Agriculture</a></li>
+        <li><a href="healthcare.html">Healthcare</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<!-- Header -->
+<section class="page-header">
+    <h1>🌾 Smart Agriculture Platform</h1>
+    <p>AI-powered farming recommendations and advisory services.</p>
+</section>
+
+<!-- Recommendation Form -->
+<section class="form-section">
+
+    <div class="form-card">
+
+        <h2>Crop Recommendation</h2>
+
+        <input
+            type="text"
+            id="crop"
+            placeholder="Enter Crop Name">
+
+        <select id="soil">
+            <option value="">Select Soil Type</option>
+            <option>Clay Soil</option>
+            <option>Red Soil</option>
+            <option>Black Soil</option>
+            <option>Sandy Soil</option>
+        </select>
+
+        <button onclick="recommendCrop()">
+            Generate Recommendation
+        </button>
+
+        <div id="result" class="result-box"></div>
+
+    </div>
+
+</section>
+
+<!-- Weather Section -->
+<section class="cards">
+
+    <div class="card">
+        <i class="fas fa-cloud-sun"></i>
+        <h3>Weather</h3>
+        <p>32°C</p>
+        <p>Partly Cloudy</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-droplet"></i>
+        <h3>Humidity</h3>
+        <p>68%</p>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-wind"></i>
+        <h3>Wind Speed</h3>
+        <p>12 km/h</p>
+    </div>
+
+</section>
+
+<!-- Market Prices -->
+<section class="cards">
+
+    <div class="card">
+        <h3>🌾 Paddy</h3>
+        <p>₹2500 / Quintal</p>
+    </div>
+
+    <div class="card">
+        <h3>🌽 Maize</h3>
+        <p>₹2200 / Quintal</p>
+    </div>
+
+    <div class="card">
+        <h3>🥜 Groundnut</h3>
+        <p>₹6800 / Quintal</p>
+    </div>
+
+</section>
+
+<footer>
+    <p>
+        © 2026 GramSphere AI | Smart Agriculture Platform
+    </p>
+</footer>
+
+<script src="js/agriculture.js"></script>
+
+</body>
+</html>
